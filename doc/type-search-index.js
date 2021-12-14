@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"cartes","l":"Carte"},{"p":"cartes","l":"CarteInfo"},{"p":"cartes","l":"CarteSet"},{"p":"jeu","l":"Jeu"},{"p":"jeu","l":"Joueur"},{"p":"jeu","l":"JoueurHumain"},{"p":"jeu","l":"JoueurOrdinateur"},{"p":"cartes","l":"SimpleMain"},{"p":"cartes","l":"SimpleTalon"},{"p":"test","l":"test"},{"l":"所有类","url":"allclasses-index.html"}]
