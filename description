@@ -1,5 +1,8 @@
-La partie oppose individuellement chaque joueur contre la banque. Le but est de battre le croupier sans depasser le score de 21. Des qu'un joueur fait plus que 21, on dit qu'il « brule » et il perd sa mise initiale. La valeur des cartes sont les suivantes :
-de 2 a 9 : valeur nominale de la carte ;
-de 10 au roi (surnommees « buche »)  : 10 points ;
-As : 1 ou 11 points (au choix du joueur).
-Un Blackjack est la situation ou le joueur recoit, des le debut du jeu, un As et une buche. Si le joueur atteint 21 points avec plus de deux cartes, on compte 21 points et non Blackjack.
+Basic Blackjack Rules:
+The goal of blackjack is to beat the dealer's hand without going over 21.
+Face cards are worth 10. Aces are worth 1 or 11, whichever makes a better hand.
+Each player starts with two cards.
+To 'Hit' is to ask for another card. To 'Stand' is to hold your total and end your turn.
+If you go over 21 you bust.
+If you are dealt 21 from the start (Ace & 10), you got a blackjack.
+Dealer will hit until his/her cards total 17 or higher.

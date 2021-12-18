@@ -10,7 +10,7 @@ public class JoueurOrdinateur extends Joueur {
 
 	@Override
 	public boolean prendCarte() {
-		if (super.main.valeur() <= 16) {
+		if (super.main.valeur() <= 17) {
 			return true;
 		} else
 			return false;
