@@ -27,7 +27,7 @@ public abstract class Joueur {
 	
 	/**
 	 * This function used to determine whether to draw a card.
-	 * @return
+	 * @return True or False
 	 */
 	public abstract boolean prendCarte();
 

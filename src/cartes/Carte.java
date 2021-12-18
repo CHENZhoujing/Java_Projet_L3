@@ -12,6 +12,8 @@ public class Carte implements CarteInfo{
 	private String valeur;
 	private int count;
 
+	public Carte() {}
+	
 	public Carte(String couleur, String valeur) {
 		super();
 		this.couleur = couleur;

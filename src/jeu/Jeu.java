@@ -40,15 +40,29 @@ public class Jeu {
 		joueurs.add(j);
 	}
 
+	public static int inputInt() {
+		int res = 0;
+		for (;;) {
+			try {
+				res = scan.nextInt();
+				scan.nextLine();
+				break;
+			} catch (Exception e) {
+				System.out.println("Veuillez saisir un num√©ro.");
+				scan.nextLine();
+				continue;
+			}
+		}
+		return res;
+	}
+
 	/**
 	 * This function used to create NPC.
 	 */
 	public void prepareNpc() {
 		int i = 0;
 		System.out.println("Combien de joueursOrdinateurs avons-nous?");
-		if (scan.hasNextInt()) {
-			i = scan.nextInt();
-		}
+		i = inputInt();
 		for (int j = 0; j < i; j++) {
 			this.addJoueur(new JoueurOrdinateur());
 		}
@@ -57,9 +71,7 @@ public class Jeu {
 	public void prepareJoueur() {
 		int i = 0;
 		System.out.println("Combien de joueurs avons-nous?");
-		if (scan.hasNextInt()) {
-			i = scan.nextInt();
-		}
+		i = inputInt();
 		for (int j = 0; j < i; j++) {
 			this.addJoueur(new JoueurHumain());
 		}
@@ -123,7 +135,7 @@ public class Jeu {
 					}
 					System.out.println(j.getMain().toString() + "\nVotre valeur est " + j.getMain().valeur() + ".");
 					System.out.println(
-							"Souhaitez-vous choisir une autre carte? Entrez n'importe quoi pour frapper, entrez \\ \"N \\\" ou \\ \"n \\\" pour tenir la carte.");
+							"Souhaitez-vous choisir une autre carte? Entrez n'importe quoi pour frapper, entrez  \"N \" ou \"n \" pour tenir la carte.");
 					if (scan.hasNext()) {
 						entre = scan.next();
 					}
@@ -154,6 +166,8 @@ public class Jeu {
 
 	/**
 	 * This function used to read file from disk.
+	 * 
+	 * @param s is File name
 	 */
 	public static void lireFichier(String s) {
 		try {
@@ -173,9 +187,7 @@ public class Jeu {
 		boolean quit = false;
 		printMenu();
 		do {
-
-			int choice = scan.nextInt();
-			scan.nextLine();
+			int choice = inputInt();
 			switch (choice) {
 			case (0):
 				String s = "description";
@@ -189,16 +201,17 @@ public class Jeu {
 				break;
 			case (2):
 				quit = true;
-				scan.close();
 				break;
 			default:
-				System.out.println("Cette valeur ne fait pas partie des possibilit®¶s.");
+				System.out.println("Cette valeur ne fait pas partie des possibilitÔøΩÔøΩs.");
 			}
 
 		} while (!quit);
+		scan.close();
 	}
 
 	public static void main(String[] args) {
+
 		launchMenu();
 	}
 }
